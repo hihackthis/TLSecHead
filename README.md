@@ -83,3 +83,10 @@ Done :-)
 The tool uses a list of User-Agents randomly to query the headers of websites. Feel free to edit it with your preferred User-Agents.
 
 ![](https://github.com/hihackthis/TLSecHead/blob/main/images/user_agenTL.png)
+
+
+## Conclusion
+
+I hope this tool is useful and that it can make everyone's work faster.
+
+Have fun! 😃
