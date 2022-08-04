@@ -66,14 +66,13 @@ user_agents = [
 
 # Here it fetch the website's HTTP headers and converts it into a list.
 def fetch_headers(head):
-    for i in range(1, 4):
-        user_agent = random.choice(user_agents)
-        headers = {"User-Agent": user_agent}
-        response = requests.head(head, headers=headers)
-        headers = response.headers
-        keys_head = headers.keys()
-        list_headers = list(keys_head)
-        return list_headers
+    user_agent = random.choice(user_agents)
+    ua_header = {"User-Agent": user_agent}
+    response = requests.head(head, headers=ua_header)
+    set_headers = response.headers
+    keys_head = set_headers.keys()
+    list_headers = list(keys_head)
+    return list_headers
 
 
 # Here it compares the list of headers found on the website with the list of secure headers.
@@ -127,7 +126,7 @@ def websites(url):
     except Exception as excpt:
         error = f"There was an error: {excpt}\n"
         print(Fore.RED, Style.BRIGHT, "\nERROR:", Style.RESET_ALL, error.split(":")[1])
-        print("\t\tBe sure enter correct URL")
+        print("\t\tBe sure enter correct URL\n")
 
 
 # Here it enters the file containing a list of websites
@@ -146,10 +145,10 @@ def file_urls(arq):
                 except Exception as excpt:
                     error = f"There was an error: {excpt}\n"
                     print(Fore.RED, Style.BRIGHT, "\nERROR:", Style.RESET_ALL, error.split(":")[1])
-                    print("\t\tBe sure enter correct URL")
+                    print("\t\tBe sure enter correct URL\n")
                     continue
     else:
-        print("Did you enter a right file or directory?")
+        print("Did you enter a right file or directory?\n")
 
 
 # Display the URL(s)
@@ -214,8 +213,8 @@ def banner():
 
 # Here is the menu
 def main():
-    parser = argparse.ArgumentParser(prog='VSecHead.py',
-                                     description="------ Traffic Light Secure Header ------",
+    parser = argparse.ArgumentParser(prog='TLSecHead.py',
+                                     description="------ Traffic Light Secure Headers ------",
                                      formatter_class=argparse.RawTextHelpFormatter)
     group = parser.add_mutually_exclusive_group()
     group.add_argument("-u", "--url", help="enter URL [http:// | https://]")
