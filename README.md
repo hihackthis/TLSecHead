@@ -23,28 +23,10 @@ Viewing the menu,
 or
 
 # python3 TLSecHead.py --help
-
-______ ________________________________ ______
-  _____ _    ___         _  _             _ 
- |_   _| |  / __| ___ __| || |___ __ _ __| |
-   | | | |__\__ \/ -_) _| __ / -_) _` / _` |
-   |_| |____|___/\___\__|_||_\___\__,_\__,_|
-
-______ _______ By @hihackthis _________ ______
-
-                    [X]                    
-                    [>]                    
-                    [#]                     
-
-usage: TLSecHead.py [-h] [-u URL | -f FILE] [-ua AGENT]
-
------- Traffic Light Secure Headers ------
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -u URL, --url URL     enter URL [http:// | https://]
-  -f FILE, --file FILE  enter the file with URLs
 ```
+
+![](https://github.com/hihackthis/TLSecHead/blob/main/images/helpTL.png)
+
 
 Only two options,
 
@@ -99,3 +81,5 @@ Done :-)
 ## Good to know
 
 The tool uses a list of User-Agents randomly to query the headers of websites. Feel free to edit it with your preferred User-Agents.
+
+![](https://github.com/hihackthis/TLSecHead/blob/main/images/user_agenTL.png)
