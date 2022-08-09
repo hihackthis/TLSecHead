@@ -14,7 +14,7 @@
 #
 # by Diego Moicano (@hihackthis)
 # August 01st, 2022
-# version 1.0
+# version 0.5
 #
 # Run:
 # VSecHead.py -u/--url http(s)://www.example.com
@@ -28,7 +28,7 @@ from colorama import Fore, Style
 from requests.exceptions import MissingSchema
 
 sec_headers = [
-    "HTTP Strict Transport Security",
+    "Strict-Transport-Security",
     "X-Frame-Options",
     "X-Content-Type-Options",
     "Content-Security-Policy",
@@ -39,7 +39,7 @@ sec_headers = [
     "Cross-Origin-Opener-Policy",
     "Cross-Origin-Resource-Policy",
     "Cache-Control",
-    "Permissions Policy"
+    "Permissions-Policy"
 ]
 
 dpr_headers = [
