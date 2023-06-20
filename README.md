@@ -1,7 +1,7 @@
 # Traffic Light Secure Headers - TLSecHead
 
 
-🚦 **Traffic Light Secure Headers**  is a tool that aims to retrieve the response headers from a website (URL), or from a file containing a list of URLs, and compare it with a list of security response headers. As a result we have:
+🚦 **Traffic Light Secure Headers**  is a tool that aims to retrieve the response headers from a website (URL), or from a file containing a list of URLs, and compare it with a list of security response headers. As a result, we have:
 
 - $\textcolor{red}{Deprecated\ Headers}$
 - $\textcolor{yellow}{Missing\ Headers}$
@@ -85,8 +85,18 @@ The tool uses a list of User-Agents randomly to query the headers of websites. F
 ![](https://github.com/hihackthis/TLSecHead/blob/main/images/user_agenTL.png)
 
 
-## Conclusion
+## Final words
 
 I hope this tool is useful and that it can make everyone's work faster.
 
-Have fun! 😃
+Have fun! :money_mouth_face:
+
+<div align="center">
+
+[!["Buy Me A Cake"](https://github.com/hihackthis/autoKNOXSS/blob/main/images/06.png)](https://bmc.link/moicanodieQ) 
+
+[!["Paypal"](https://github.com/hihackthis/autoKNOXSS/blob/main/images/07.png)](https://www.paypal.com/donate/?hosted_button_id=UC7N8XFXNQCPA)
+
+</div>
+
+Heartfelt thanks :sunglasses:
